@@ -81,6 +81,7 @@
                     .course-image {
                         .cover-image {
                             height: 162px;
+                            background-color: $white-color;
                             &:before {
                                 display: none;
                             }
@@ -95,6 +96,7 @@
                         height: auto;
                         font-family: $font-family-title;
                         padding: 10px 20px 0;
+                        background-color: $primary-light;
                         .course-code {
                             display: none;
                         }
@@ -511,6 +513,7 @@ body.indigo-dark-theme {
                         border: 1px solid $border-color-d;
                         background: $primary-light-d;
                         .course-info {
+                            background-color: $primary-light-d;
                             .course-title {
                                 color: $text-color-d;
                             }
@@ -524,7 +527,7 @@ body.indigo-dark-theme {
                             .course-date {
                                 border-top: 1px solid $border-color-d;
                                 color: $text-color-primary;
-                                background: $light-overlay-d;
+                                background: $primary-light-d;
                                 svg {
                                     path {
                                         fill: $text-color-primary;

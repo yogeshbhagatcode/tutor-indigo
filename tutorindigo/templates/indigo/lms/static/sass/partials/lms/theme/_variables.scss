@@ -1,5 +1,5 @@
 $primary: {{ INDIGO_PRIMARY_COLOR }};
-$primary-light: #F2F7F8;
+$primary-light: {{INDIGO_PRIMARY_LIGHT}};
 
 // Theme fonts
 $font-family-title: 'Inter', sans-serif;
@@ -17,11 +17,12 @@ $light-dark: #374151;
 $big-screen: 1200px;
 
 
-
+$white-color:{{ INDIGO_WHITE_COLOR }};
+$black-color:{{ INDIGO_BLACK_COLOR }};
 // Introducing dark-theme variables
 
-$primary-d: #AEC7F6;
-$primary-light-d: #292A2C;
+$primary-d: {{ INDIGO_PRIMARY_D }};
+$primary-light-d: {{ INDIGO_PRIMARY_LIGHT_D }};
 $gray-light: #E5E7EB;
 $gray-lighter: #c8c8c8;
 $light-dark-d: #374151;
@@ -32,7 +33,7 @@ $light-overlay-d: #36383B;
 $danger-d: #FFA07A;
 $success-d: #54CF5E;
 $btn-color-d: #112F6B;
-$body-bg-d: #0D0D0E;
+$body-bg-d: {{ INDIGO_BODY_BG_D }};
 
 $instructor-input-border-color: $gray-lighter;
 $light-theme-switch-bg-color: #1D386A;

@@ -23,6 +23,15 @@ config: t.Dict[str, t.Dict[str, t.Any]] = {
         "VERSION": __version__,
         "WELCOME_MESSAGE": "The place for all your online learning",
         "PRIMARY_COLOR": "#15376D",  # Indigo
+        "PRIMARY_LIGHT":"#F2F7F8",
+
+        "WHITE_COLOR":"#FFFFFF",
+        "BLACK_COLOR":"#111827",
+
+        "PRIMARY_D":"#ADC6F4",  #primary buttonm color change
+        "BODY_BG_D":"#0D0D0E", # background color in dark theme 
+        "PRIMARY_LIGHT_D": "#292A2C", # backgreound of search tab.
+
         "ENABLE_DARK_TOGGLE": True,
         # Footer links are dictionaries with a "title" and "url"
         # To remove all links, run:
