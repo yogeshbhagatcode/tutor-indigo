@@ -123,6 +123,27 @@ indigo_styled_mfes = [
 ]
 
 
+# This is where brand-openedx is rendered in the mfe build directory
+hooks.Filters.ENV_TEMPLATE_TARGETS.add_item(
+    ("brand-openedx/", "plugins/mfe/build/mfe/")
+)
+
+
+# MEFs that are styled using brand-openedx
+brand_styled_mfes = indigo_styled_mfes + ["authn"]
+
+
+for mfe in brand_styled_mfes:
+    hooks.Filters.ENV_PATCHES.add_item(
+        (
+            f"mfe-dockerfile-pre-npm-install-{mfe}",
+            """
+COPY ./brand-openedx /openedx/brand-openedx
+"""
+        )
+    )
+
+
 for mfe in indigo_styled_mfes:
     hooks.Filters.ENV_PATCHES.add_items(
         [
@@ -131,7 +152,7 @@ for mfe in indigo_styled_mfes:
                 """
 RUN npm install @edly-io/indigo-frontend-component-footer@^3.0.0
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^4.0.0'
-RUN npm install 'git+https://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@github.com/yogeshbhagatcode/brand-openedx.git#theme-customisation'
+RUN npm install 'file:/openedx/brand-openedx'
 """,
             ),
             (
@@ -147,7 +168,7 @@ const { default: IndigoFooter } = await import('@edly-io/indigo-frontend-compone
 hooks.Filters.ENV_PATCHES.add_item(
     (
         "mfe-dockerfile-post-npm-install-authn",
-        "RUN npm install 'git+https://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@github.com/yogeshbhagatcode/brand-openedx.git#theme-customisation'",
+        "RUN npm install 'file:/openedx/brand-openedx'",
     )
 )
 
