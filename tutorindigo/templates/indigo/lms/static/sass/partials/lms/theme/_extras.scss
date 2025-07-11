@@ -1708,6 +1708,13 @@ body.indigo-dark-theme {
   }
 }
 
+//placholder color on membership page on instructor
+.indigo-dark-theme .instructor-dashboard-content-2 textarea::placeholder{
+  color: #F8F8F8;
+}
+.indigo-dark-theme .revoke{
+  color:#F8F8F8 !important;
+}
 @import '../../../extra/footer';
 @import '../../../extra/header';
 @import '../../../dashboard/dashboard';

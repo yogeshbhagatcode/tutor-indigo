@@ -448,6 +448,10 @@ body.indigo-dark-theme {
                         input {
                             color: $text-color-d;
                         }
+                        //placeholder color on discover page
+                        ::placeholder{
+                            color: #F8F8F8;
+                        }
                     }
                 }
             }
