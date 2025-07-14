@@ -81,7 +81,7 @@ section.home {
                                 position: static;
                                 margin: 0 0 0 16px;
                                 min-width: 90px;
-                                color: #fff;
+                                color: $text-color;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 26px;
@@ -209,4 +209,14 @@ body.indigo-dark-theme {
             }
         }
     }
+}
+
+.global-header .nav-links .secondary {
+        .btn-holder {
+            .nav-item {
+                .btn {
+                    color: $text-color;
+                }
+            }
+        }
 }
