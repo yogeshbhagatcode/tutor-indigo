@@ -143,6 +143,9 @@
                 opacity: .8;
             }
         }
+         >span.register{
+            background: none !important;;
+        }
         span.closed {
             background: $primary-light;
             border-radius: 6px;
@@ -398,9 +401,12 @@ body.indigo-dark-theme {
                     border: 1px solid $text-color-d;
                 }
             }
-            a.register, a strong, >span.register, a.add-to-cart {
+            a.register, a strong,  a.add-to-cart {
                 color: $btn-color-d;
                 background: $primary-d;
+            }
+            >span.register{
+                color: WHITE;
             }
             span.closed {
                 background: $primary-light-d;
@@ -464,8 +470,8 @@ body.indigo-dark-theme {
     }
 }
 
-.course-info.about .main-cta a.register{
-    color: $text-color;
+body .indigo-dark-theme .course-info.about .main-cta span.register.disabled{
+    color: #F8F8F8 !important;
 }
 .course-info.about .main-cta a strong{
     color: $text-color;
