@@ -31,6 +31,7 @@ config: t.Dict[str, t.Dict[str, t.Any]] = {
         "PRIMARY_D":"#ADC6F4",  #primary buttonm color change
         "BODY_BG_D":"#0D0D0E", # background color in dark theme 
         "PRIMARY_LIGHT_D": "#292A2C", # backgreound of search tab.
+        "TEXT_COLOR":"#F8F8F8", #TEXT color in light theme.
 
         "ENABLE_DARK_TOGGLE": True,
         # Footer links are dictionaries with a "title" and "url"

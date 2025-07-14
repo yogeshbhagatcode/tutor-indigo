@@ -413,7 +413,7 @@ body.view-student-notes {
     input[type="button"] {
       background: $primary !important;
       border-color: $primary !important;
-      color: white !important;
+      color: $text-color !important;
       text-shadow: none !important;
       font-size: 14px;
       font-weight: 500;
@@ -488,7 +488,7 @@ body.view-instructordash {
           outline-offset: 3px;
           &.active-section {
             background: $primary !important;
-            color: white !important;
+            color: $text-color !important;
           }
           &:hover {
             color: $dark;
@@ -597,11 +597,15 @@ body.view-instructordash {
   .enrollment-button, input[type=button], button.btn {
     background: $primary;
     border-color: $primary;
-    color: white;
+    color: $text-color;
     font-weight: 500;
     font-size: 14px;
     box-shadow: none;
+    // :hover{
+    //   background-image: linear-gradient($primary, #cfc6c6) !important;
+    // }
   }
+
 }
 .course-wrapper .course-content .xblock.xblock-student_view-vertical,
 .course-wrapper .course-content .xblock.xblock-public_view-vertical,
@@ -1714,6 +1718,14 @@ body.indigo-dark-theme {
 }
 .indigo-dark-theme .revoke{
   color:#F8F8F8 !important;
+}
+
+.instructor-dashboard-content-2 input[type="button"]:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #fbfbfb;
+    cursor: pointer;
+    background-color: #e1e1e1;
+    background-image: -webkit-linear-gradient(#e1e1e1, #cfc6c6);
+    background-image: linear-gradient($primary, $primary) !important;
 }
 @import '../../../extra/footer';
 @import '../../../extra/header';
