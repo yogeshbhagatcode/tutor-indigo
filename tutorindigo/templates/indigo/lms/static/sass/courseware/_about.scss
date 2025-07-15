@@ -406,7 +406,7 @@ body.indigo-dark-theme {
                 background: $primary-d;
             }
             >span.register{
-                color: WHITE;
+                color: #fff;
             }
             span.closed {
                 background: $primary-light-d;
@@ -470,6 +470,12 @@ body.indigo-dark-theme {
     }
 }
 
+.course-info.about .main-cta a.register{
+    color: $text-color;
+}
+.course-info.about .main-cta a strong{
+    color: $text-color;
+}
 body .indigo-dark-theme .course-info.about .main-cta span.register.disabled{
     color: #F8F8F8 !important;
 }
